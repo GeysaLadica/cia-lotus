@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+#displaygrid{
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+                         "header header header header"
+                         "modalidades modalidades modalidades modalidades"
+                         "sobre sobre sobre sobre"
+                         "footer footer footer footer";
+    grid-template-rows: 65px 450px 700px 700px 80px;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+}
+header{
+    grid-area: header;
+    background-color: pink;
+}
+#modalidades{
+    grid-area: modalidades;
+    background-color: black;
+}
+#sobre{
+    grid-area: sobre;
+    background-color: blue;
+}
+footer{
+    grid-area: footer;
+    background-color: grey;
+}
