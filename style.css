@@ -8,7 +8,7 @@ body{
                          "modalidades modalidades modalidades modalidades"
                          "sobre sobre sobre sobre"
                          "footer footer footer footer";
-    grid-template-rows: 75px 490px 725px 700px 100px;
+    grid-template-rows: 75px 490px 400px 700px 100px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 nav{
@@ -18,15 +18,22 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-nav img{
+/* #logo{
     width: 9vw;
-    height: 95%;
+    height: 40px;
     display: flex;
+} */
+#logo > img{
+    width: 55px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 nav p{
     color: white;
     font-family: 'ZCOOL XiaoWei', serif;
-    font-size: 17pt;
+    font-size: 11pt;
 }
 nav #links{
     width: 75vw;
@@ -38,16 +45,39 @@ nav #links{
 nav a{
     text-decoration: none;
     font-family: 'ZCOOL XiaoWei', serif;
-    font-size: 19pt;
+    font-size: 13pt;
     color: rgba(222, 17,181)
+}
+#frase-banner{
+    width: 65vw;
+    height: 300px;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
 }
 header{
     grid-area: header;
-    background-image: url(img/Fundo.jpg)
+    background-image: url(img/fundo3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #modalidades{
     grid-area: modalidades;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modalidades p{
+    text-align: center;
+    line-height: 65px;
+    font-size: 20pt;
+    font-family: 'ZCOOL XiaoWei', serif;
+    background: -webkit-linear-gradient(left top, rgb(16, 161, 218), rgb(59, 84, 174));
+    background: linear-gradient(to bottom right, rgb(16, 161, 218), rgb(59, 84, 174));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
 }
 #sobre{
     grid-area: sobre;
