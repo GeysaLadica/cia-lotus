@@ -41,7 +41,7 @@ nav a{
     text-decoration: none;
     font-family: 'ZCOOL XiaoWei', serif;
     font-size: 13pt;
-    color: rgba(222, 17,181)
+    color: rgba(222, 17,181);
 }
 #frase-banner{
     width: 65vw;
@@ -74,9 +74,42 @@ header{
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;  
 }
+#modalidades > p:hover{
+    background: -webkit-linear-gradient(left top, rgb(218, 188, 16), rgba(222, 17,181));
+    background: linear-gradient(to bottom right, rgb(218, 188, 16), rgba(222, 17,181));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent; 
+}
 #sobre{
     grid-area: sobre;
-    background-color: blue;
+    background-color: rgb(245, 230, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Cantarell', sans-serif;
+}
+.sobre{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+#sobre p{
+    width: 200px;
+}
+.img-sobre{
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     grid-area: footer;
