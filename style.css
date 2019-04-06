@@ -8,7 +8,7 @@ body{
                          "modalidades modalidades modalidades modalidades"
                          "sobre sobre sobre sobre"
                          "footer footer footer footer";
-    grid-template-rows: 75px 490px 400px 700px 100px;
+    grid-template-rows: 75px 490px 400px 700px 105px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 nav{
@@ -78,8 +78,8 @@ header{
     -webkit-text-fill-color: transparent;  
 }
 #modalidades > p:hover{
-    background: -webkit-linear-gradient(left top, rgb(218, 188, 16), rgba(222, 17,181));
-    background: linear-gradient(to bottom right, rgb(218, 188, 16), rgba(222, 17,181));
+    background: -webkit-linear-gradient(left top, rgb(218, 188, 16), rgb(222, 17,181));
+    background: linear-gradient(to bottom right, rgb(218, 188, 16), rgb(222, 17,181));
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent; 
 }
@@ -103,6 +103,7 @@ header{
 }
 #sobre p{
     width: 220px;
+    color: black;
 }
 .img-sobre{
     width: 75px;
@@ -115,23 +116,40 @@ header{
     align-items: center;
 }
 .img-sobre:hover{
-    width: 77px;
-    height: 77px;
     cursor: pointer;
     box-shadow: rgba(60, 60, 60, 0.527) 2px 3px 2px;
+
 }
+.bem-estar:hover{
+    /* background-color: rgb(102, 255, 186); */
+    background-color: #C8FF96;
+    transition: 0.9s;
+}
+.felicidade:hover{
+    /* background-color: rgb(102, 255, 186); */
+    background-color: rgb(255, 227, 70);
+    transition: 0.9s;
+}
+.humanista:hover{
+    /* background-color: rgb(102, 255, 186); */
+    background-color: rgb(255, 131, 152);
+    transition: 0.9s;
+}
+
 footer{
     grid-area: footer;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
 }
+
 #socialmidias{
-    width: 90vw;
-    height: 40px;
+    width: 60px;
+    height: 100px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 .social{
@@ -148,10 +166,24 @@ footer{
     height: 15px;
 }
 .social:hover{
-    background-color: rgb(45, 204, 112);
+    background-color: rgb(16, 161, 218);
     cursor: pointer;
     transition: 0.9s;
 }
 #contato{
+    width: 80vw;
+    height: 90px;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+#contato > p >a {
+    font-family: arial;
+    font-size: 15px;
+    margin: 3px;
+    text-decoration: none;
+    color: white;
+}
+#tel{
+    margin: 0px;
 }
