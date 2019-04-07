@@ -94,6 +94,26 @@ header{
 .img-modalidades{
     display: none;
 }
+.img-modalidades > img:nth-child(1):hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+.img-modalidades > img:nth-child(2):hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+.img-modalidades > img:nth-child(3):hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+.img-modalidades > img:nth-child(4):hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
 #sobre{
     grid-area: sobre;
     background-color: rgb(245, 230, 252);
@@ -149,31 +169,32 @@ header{
 .img-sobre:hover{
     cursor: pointer;
     box-shadow: rgba(60, 60, 60, 0.527) 2px 3px 2px;
+    transition: 0.9s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 
 }
 .bem-estar:hover{
     background-color: #C8FF96;
-    transition: 0.9s;
 }
 .felicidade:hover{
     background-color: rgb(255, 227, 70);
-    transition: 0.9s;
 }
 .humanista:hover{
     background-color: rgb(255, 131, 152);
-    transition: 0.9s;
 }
 
 footer{
     grid-area: footer;
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #socialmidias{
-    width: 60px;
+    width: 69px;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -212,17 +233,38 @@ footer{
     text-decoration: none;
     color: white;
 }
-#tel{
-    margin: 0px;
+#end, #tel{
+    margin: 10px;
+    width: 280px;;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media(min-width:768px){
     header{
-        background-image: url(img/fundo-tablet.png);
+        background-image: url(img/Fundo-tablet.jpg);
+    }
+    #displaygrid{
+        grid-template-rows: 75px 370px 400px 700px 115px;
     }
 }
 @media(min-width:1024px){
     header{
-        background-image: url(img/fundo-laptop.png);
+        background-image: url(img/Fundo-laptop.jpg);
+    }
+    #frase-banner h1{
+        font-size: 45px;
+    }
+    #frase-banner h2{
+        font-size: 35px;
+    }
+    #frase-banner h3{
+        font-size: 25px;
+    }
+    #displaygrid{
+        grid-template-rows: 75px 350px 400px 700px 115px;
     }
     nav a{
         font-size: 15pt;
@@ -234,7 +276,7 @@ footer{
         flex-direction: row;
     }
     #displaygrid{
-        grid-template-rows: 75px 490px 400px 500px 105px;
+        grid-template-rows: 75px 350px 400px 500px 115px;
     }
     .img-sobre-laptop{
         display: flex;
@@ -247,5 +289,21 @@ footer{
     }
     .sobre-mobile{
         display: none;
+    }
+    #socialmidias{
+        width: 290px;
+        flex-direction: row;
+    }
+    #contato{
+        flex-direction: row;
+    }
+}
+@media(min-width:1026px){
+    header{
+        background-image: url(img/Fundo-laptopgrande.jpg);
+    }
+    #socialmidias{
+        width: 490px;
+        margin: 0px 50px;
     }
 }
