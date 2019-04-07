@@ -64,7 +64,7 @@ header{
     grid-area: modalidades;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 #modalidades p{
@@ -83,6 +83,17 @@ header{
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent; 
 }
+.img-modalidades{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-modalidades{
+    display: none;
+}
 #sobre{
     grid-area: sobre;
     background-color: rgb(245, 230, 252);
@@ -93,7 +104,27 @@ header{
     text-align: center;
     font-family: 'Cantarell', sans-serif;
 }
-.sobre{
+.sobre-laptop{
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.sobre-laptop{
+    display: none;
+}
+.sobre-mobile{
+    display: flex;
+}
+.img-sobre-mobile{
+    display: flex;
+}
+.img-sobre-laptop{
+    display:none;
+}
+
+.sobre-mobile{
     width: 95vw;
     display: flex;
     justify-content: center;
@@ -121,17 +152,14 @@ header{
 
 }
 .bem-estar:hover{
-    /* background-color: rgb(102, 255, 186); */
     background-color: #C8FF96;
     transition: 0.9s;
 }
 .felicidade:hover{
-    /* background-color: rgb(102, 255, 186); */
     background-color: rgb(255, 227, 70);
     transition: 0.9s;
 }
 .humanista:hover{
-    /* background-color: rgb(102, 255, 186); */
     background-color: rgb(255, 131, 152);
     transition: 0.9s;
 }
@@ -186,4 +214,38 @@ footer{
 }
 #tel{
     margin: 0px;
+}
+@media(min-width:768px){
+    header{
+        background-image: url(img/fundo-tablet.png);
+    }
+}
+@media(min-width:1024px){
+    header{
+        background-image: url(img/fundo-laptop.png);
+    }
+    nav a{
+        font-size: 15pt;
+    }
+    .img-modalidades{
+        display: flex;
+    }
+    #sobre{
+        flex-direction: row;
+    }
+    #displaygrid{
+        grid-template-rows: 75px 490px 400px 500px 105px;
+    }
+    .img-sobre-laptop{
+        display: flex;
+    }
+    .img-sobre-moblie{
+        display: none;
+    }
+    .sobre-laptop{
+        display: flex;
+    }
+    .sobre-mobile{
+        display: none;
+    }
 }
