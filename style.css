@@ -77,12 +77,14 @@ header{
     background: linear-gradient(to bottom right, rgb(16, 161, 218), rgb(59, 84, 174));
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;  
+    
 }
 #modalidades > p:hover{
     background: -webkit-linear-gradient(left top, rgb(218, 188, 16), rgb(222, 17,181));
     background: linear-gradient(to bottom right, rgb(218, 188, 16), rgb(222, 17,181));
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent; 
+    cursor: pointer;
 }
 .img-modalidades{
     width: 200px;
@@ -91,6 +93,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 .img-modalidades{
     display: none;
