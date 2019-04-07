@@ -7,8 +7,9 @@ body{
                          "header header header header"
                          "modalidades modalidades modalidades modalidades"
                          "sobre sobre sobre sobre"
+                         "representantes representantes representantes representantes"
                          "footer footer footer footer";
-    grid-template-rows: 75px 490px 400px 700px 105px;
+    grid-template-rows: 75px 490px 400px 700px 80px 105px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 nav{
@@ -184,7 +185,18 @@ header{
 .humanista:hover{
     background-color: rgb(255, 131, 152);
 }
-
+#representantes{
+    grid-area: representantes;
+    background-color: rgb(245, 230, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: black;
+    text-shadow: rgba(24, 21, 21, 0.582) 2px 3px 2px;
+    font-size: 30px;  
+}
 footer{
     grid-area: footer;
     background-color: black;
@@ -247,7 +259,7 @@ footer{
         background-image: url(img/Fundo-tablet.jpg);
     }
     #displaygrid{
-        grid-template-rows: 75px 370px 400px 700px 115px;
+        grid-template-rows: 75px 370px 400px 700px 80px 115px;
     }
 }
 @media(min-width:1024px){
@@ -264,7 +276,7 @@ footer{
         font-size: 25px;
     }
     #displaygrid{
-        grid-template-rows: 75px 350px 400px 700px 115px;
+        grid-template-rows: 75px 350px 400px 700px 80px 115px;
     }
     nav a{
         font-size: 15pt;
@@ -276,7 +288,7 @@ footer{
         flex-direction: row;
     }
     #displaygrid{
-        grid-template-rows: 75px 350px 400px 500px 115px;
+        grid-template-rows: 75px 350px 400px 500px 80px 115px;
     }
     .img-sobre-laptop{
         display: flex;
