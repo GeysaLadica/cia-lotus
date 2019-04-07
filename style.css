@@ -302,6 +302,9 @@ footer{
     #displaygrid{
         grid-template-rows: 75px 350px 400px 500px 80px 10px 150px;
     }
+    #representantes{
+        font-size: 40px;
+    }
     .img-sobre-laptop{
         display: flex;
     }
