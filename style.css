@@ -56,7 +56,7 @@ nav a:hover{
 }
 header{
     grid-area: header;
-    background-image: url(img/fundo3.png);
+    background-image: url(img/Fundo-laptop.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,18 +264,17 @@ footer{
     justify-content: center;
     align-items: center;
 }
-@media(min-width:768px){
-    header{
-        background-image: url(img/Fundo-tablet.jpg);
-    }
+@media(max-width:768px){
     #displaygrid{
         grid-template-rows: 75px 370px 400px 700px 80px 150px;
     }
 }
-@media(min-width:1024px){
-    header{
-        background-image: url(img/Fundo-laptop.jpg);
+@media(max-width:826px){
+    #displaygrid{
+        grid-template-rows: 75px 360px 400px 700px 80px 150px;
     }
+}
+@media(min-width:1024px){
     #frase-banner h1{
         font-size: 45px;
     }
