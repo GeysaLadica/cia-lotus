@@ -10,7 +10,7 @@ body{
                          "representantes representantes representantes representantes"
                          "divfooter divfooter divfooter divfooter"
                          "footer footer footer footer";
-    grid-template-rows: 75px 460px 500px 700px 80px 10px 150px;
+    grid-template-rows: 75px 460px 630px 700px 80px 10px 150px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 nav{
@@ -270,12 +270,12 @@ footer{
 }
 @media(max-width:768px){
     #displaygrid{
-        grid-template-rows: 75px 370px 500px 700px 80px 10px 150px;
+        grid-template-rows: 75px 370px 630px 700px 80px 10px 150px;
     }
 }
 @media(max-width:826px){
     #displaygrid{
-        grid-template-rows: 75px 360px 500px 700px 80px 10px 150px;
+        grid-template-rows: 75px 360px 630px 700px 80px 10px 150px;
     }
 }
 @media(min-width:1024px){
@@ -289,7 +289,7 @@ footer{
         font-size: 25px;
     }
     #displaygrid{
-        grid-template-rows: 75px 350px 500px 700px 80px 10px 150px;
+        grid-template-rows: 75px 350px 630px 700px 80px 10px 150px;
     }
     nav a{
         font-size: 15pt;
@@ -301,7 +301,7 @@ footer{
         flex-direction: row;
     }
     #displaygrid{
-        grid-template-rows: 75px 350px 500px 500px 80px 10px 150px;
+        grid-template-rows: 75px 350px 630px 500px 80px 10px 150px;
     }
     #representantes{
         font-size: 40px;
